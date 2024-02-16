@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active {
+  color: #2333c4;
+}
+@layer base {
+  :root {
+    --color-text-white: #ffffff;
+    --color-text-blue: #2333c4;
+    --color-text-gray: #565656bc;
+    --color-text-black: #000000;
+    --background-blue: #2333c4;
+    --background-semi-blue: #eaf0fc;
+    --background-footer: #3a4344;
+    --background-footer1: #182122;
+    --background-main: #ffffff;
+  }
+}
+@layer components {
+  .btn-short {
+    @apply flex justify-center hover:transition-all duration-200 ease-linear hover:text-skin-white hover:border-none hover:bg-gradient-to-r from-green-300 to-green-400 items-center hover:border hover:rounded-full text-skin-blue border font-poppins text-[12px] hover:border-green-400 hover:py-[6px] hover:px-5  tracking-wide px-5 py-[6px] rounded-full border-blue-600;
+  }
+  .btn-long {
+    @apply flex  hover:transition-all duration-200 ease-linear  hover:bg-gradient-to-r from-green-300 to-green-400 justify-center items-center bg-skin-blue border border-blue-600 hover:border-green-400  text-skin-white font-poppins text-[12px] tracking-wide  hover:py-[0.4rem] px-4 py-[0.4rem] hover:rounded-full rounded-full;
+  }
+  .read-more {
+    @apply items-center text-skin-blue border font-poppins text-[12px] tracking-wide px-5 py-[7px] rounded-full border-blue-600 flex justify-center hover:text-skin-white  hover:py-[7px] hover:px-5 hover:bg-blue-600 transition-all duration-300 ease-linear hover:border;
+  }
+}

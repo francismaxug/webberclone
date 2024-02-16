@@ -1,0 +1,13 @@
+/*before styles
+ {
+  /* <div className=" flex gap-20">
+<div className=" bg-[url('/b1.png')] bg-cover bg-center relative before:-z-10 before:top-5 before:absolute before:w-56 before:h-[15rem] before:border-2 before:border-red-500 border-red-500   w-56 h-[15rem]    border-2  m-16 rounded-br-[7rem] rounded-tr-[5rem]  rounded-tl-[6rem] before:rounded-br-[7rem] before:rounded-tr-[5rem] transition before:left-5 before:hover:inset-0 before:transition-all duration-300    before:rounded-tl-[6rem]"></div>
+
+<div className="  bg-[url('/b1.png')] rounded-full relative w-56 h-56 border-2 before:w-64 before:h-64 before:absolute before:bg-black before:-z-10 bg-center bg-cover mt-36 before:-left-4 before:-bottom-4 hover:before:w-56 hover:before:h-56 before:hover:transition-all transition ease-in-out duration-300 hover:before:inset-0 before:rounded-full "></div>
+<div className=" bg-[url('/b1.png')] relative rounded-full mt-36 bg-center bg-cover w-56 h-56 border-2 before:absolute before:bg-black before:-z-10 before:translate before:transform before:w-[13.8rem] before:h-[13.8rem] before:scale-110 before:rounded-full before:transition-all before:duration-700  hover:before:scale-0 ease-in before:inset-0 transition duration-700 "></div>
+<div className=" bg-[url('/b1.png')] relative rounded-full mt-36 bg-center bg-cover w-48 h-48 border-2 before:absolute before:bg-black before:-z-10 before:translate before:transform before:w-[11.8rem] before:h-[11.8rem] before:scale-[1.17] before:rounded-full before:transition-all before:duration-700  hover:before:scale-0 ease-in before:inset-0 transition duration-700 "></div>
+<div className=" bg-[url('/b1.png')] relative rounded-full mt-36 bg-center bg-cover w-48 h-48 border-2 before:absolute before:bg-black before:-z-10 before:translate before:transform before:w-[11.8rem] before:h-[11.8rem] before:scale-[1.17] before:rounded-full before:transition-all before:duration-700  hover:before:scale-105 ease-in before:inset-0 transition duration-700 "></div>
+ <div className=" relative rounded-full mt-36 bg-center bg-cover w-48 h-48 border-2 before:absolute before:bg-black before:-z-10 before:translate before:transform before:w-[11.8rem] before:h-[11.8rem] before:scale-[1.17] before:rounded-full before:transition-all before:duration-700  hover:before:scale-105 ease-in before:inset-0 transition duration-700 ">
+        <img src="/b1.png" alt="" className=" object-cover object-center" />
+      </div>
+</div> */
