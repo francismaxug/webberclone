@@ -8,7 +8,7 @@ const ScrollToTopOnMount = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  return null; // This component doesn't render anything, it just handles the scroll
+  return null;
 };
 
 export default ScrollToTopOnMount;

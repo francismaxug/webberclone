@@ -11,16 +11,22 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [show1, setShow1] = useState(false);
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
 
   const displayShow = () => {
-    console.log(3);
     setShow(!show);
+    setShow1(false);
+    setShow2(false);
+  };
+  const displayShow2 = () => {
+    setShow2(!show2);
+    setShow(false);
     setShow1(false);
   };
   const change = () => {
-    console.log(1);
     setShow1(!show1);
     setShow(false);
+    setShow2(false);
   };
   // const changeAll = () => {
   //   console.log(2);
@@ -93,12 +99,70 @@ const Navbar = () => {
                     transition: { duration: 0.7 },
                   }}
                   className={`absolute mt-6 font-poppins rounded-md p-5 z-50 w-[9rem] 
-                 "block text-skin-gray bg-skin-main h-[10.5rem] space-y-5`}
+                 "block text-skin-gray bg-skin-main h-[10.5rem] shadow-md space-y-5`}
                 >
                   <li>Blog</li>
                   <li>Events</li>
                   <li>Webnars</li>
                   <li>Partners</li>
+                </motion.ul>
+              )}
+            </AnimatePresence>
+            {/* <ul
+              className={`absolute mt-6 font-poppins rounded-md p-5 z-50 w-[9rem] ${
+                show ? "block text-skin-gray font-poppins" : "hidden"
+              }  bg-skin-main h-[10.5rem] space-y-5`}
+            >
+              <li>Blog</li>
+              <li>Events</li>
+              <li>Webnars</li>
+              <li>Partners</li>
+            </ul> */}
+          </li>
+          <li
+            className={`relative ${show2 ? " text-skin-blue" : ""}`}
+            onClick={displayShow2}
+          >
+            More
+            {show2 ? (
+              <span>
+                <ChevronUpIcon
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-4 ml-2 h-3 inline-block"
+                />
+              </span>
+            ) : (
+              <span>
+                <ChevronDownIcon
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-4 ml-2 h-3 inline-block"
+                />
+              </span>
+            )}
+            <AnimatePresence>
+              {show2 && (
+                <motion.ul
+                  initial={{ y: "-8vh", opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.3, type: "spring" }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.7 },
+                  }}
+                  className={`absolute mt-6 font-poppins rounded-md p-5 z-50 w-[9rem] 
+                 "block text-skin-gray bg-skin-main h-8rem] shadow-md space-y-5`}
+                >
+                  <li>
+                    <Link to="/about-us">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/products">Products</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
                 </motion.ul>
               )}
             </AnimatePresence>

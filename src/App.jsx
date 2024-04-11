@@ -7,25 +7,9 @@ import Support from "./screens/Support";
 import Contact from "./screens/Contact";
 import Media from "./components/Media";
 
-function App() {
-  // const [show1, setShow1] = useState(false);
-  // const [show, setShow] = useState(false);
+import TransportSuit from "./screens/TransportSuit";
 
-  // const displayShow = () => {
-  //   console.log(3);
-  //   setShow(!show);
-  //   setShow1(false);
-  // };
-  // const change = () => {
-  //   console.log(1);
-  //   setShow1(!show1);
-  //   setShow(false);
-  // };
-  // const changeAll = () => {
-  //   console.log(2);
-  //   setShow1(false);
-  //   setShow(false);
-  // };
+function App() {
   return (
     <>
       <div className=" bg-skin-main">
@@ -38,6 +22,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/support" element={<Support />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/transport-suit" element={<TransportSuit />} />
           </Routes>
         </Router>
       </div>

@@ -98,3 +98,32 @@ export const supportText = [
 
 
 ]
+
+export const report = [
+  {
+    id: 1,
+    name: "Planning",
+    heading: "Super-charge your trip planning with all assets in one place real-time",
+    paragraph: "Take your trip planning to next level With Webbermill transportation app. From daily truck availability to driver availability report working with trip management module you a minute away from initiating a trip. Webbermill transport app instantly allow your trip planning process to comply with statutory regulations, organisational and other stakeholders safety measures.",
+    img: "/transit.png",
+    link: "learn more"
+
+  },
+  {
+    name: "Execution",
+    id: 2,
+    heading: "Track, document and communicate with carriers and manage expenses",
+    paragraph: "Move away from manual documentation to full digitisation of your execution of your plan trip capturing waybills, invoices & signatures digitally. Track your vehicle, driver and goods all on our transport app, by easil integrating your already tracking provider into our system.",
+    img: "/executive.png",
+    link: "learn more"
+  },
+  {
+    name: "Optimization",
+    id: 3,
+    heading: "Reveal new insights and make inform changes that impact your business",
+    paragraph: "Webbermill transportation app gives you the the ability to measure and track performance with reports, dashboards, analytics, and transportation intelligence. All these intelligent tools allow you the ability to scale your business by meeting and exceeding customer demands for fast, on-time delivery.",
+    img: "/optimazation.png",
+    link: "learn more"
+
+  },
+]
